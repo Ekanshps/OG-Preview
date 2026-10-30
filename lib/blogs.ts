@@ -1,7 +1,9 @@
 export type Block =
   | { type: "p"; text: string }
-  | { type: "h2" | "h3"; text: string }
-  | { type: "ul" | "ol"; items: string[] }
+  | { type: "h2"; text: string }
+  | { type: "h3"; text: string }
+  | { type: "ul"; items: string[] }
+  | { type: "ol"; items: string[] }
   | { type: "code"; text: string; language?: string }
   | { type: "callout"; text: string }
   | { type: "tool"; text: string };
